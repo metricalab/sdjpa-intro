@@ -68,12 +68,12 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>4.2.2</version>
                 <configuration>
-                    <url>jdbc:mysql://127.0.0.1:3306/bookdb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</url>
+                    <url>jdbc:mysql://localhost:3306/db_bookdb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</url>
                     <username>bookadmin</username>
                     <password>password</password>
                     <outputChangeLogFile>changelog.xml</outputChangeLogFile>
                     <changeSetAuthor>JT</changeSetAuthor>
-                    <changelogSchemaName>bookdb</changelogSchemaName>
+                    <changelogSchemaName>db_bookdb</changelogSchemaName>
                 </configuration>
                 <dependencies>
                     <dependency>
